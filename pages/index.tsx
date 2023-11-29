@@ -80,7 +80,7 @@ export default function Home() {
           font-size: 0.8em;
           line-height: 1.2em;
         }
-        aside a { margin: -.2em 0} 
+        aside a { margin: -.4em 0 } 
       `}</style>
 
       <main id="content" role="main">
