@@ -76,8 +76,9 @@ export default function Home() {
         }
 
         aside { 
-       	  margin-top: 2em;
-          font-size: 0.75em;
+       	  margin-top: 2.5em;
+          font-size: 0.8em;
+          line-height: 1.2em;
         }
       `}</style>
 
