@@ -74,6 +74,11 @@ export default function Home() {
           flex-wrap: wrap;
           justify-content: center;
         }
+
+        aside { 
+       	  margin-top: 2em;
+          font-size: 0.75em;
+        }
       `}</style>
 
       <main id="content" role="main">
@@ -97,6 +102,12 @@ export default function Home() {
             <a href="https://github.com/stef7">GitHub</a>
           </li>
         </ul>
+
+        <aside>
+          <p>Currently at Aesop</p>
+
+          <p>Previously at <strong><a href="https://goodhuman-owes.me">GoodHuman, who owes me</a> thousands of dollars in unpaid wages and entitlements</strong></p>
+        </aside>
       </main>
     </>
   );
