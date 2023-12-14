@@ -107,8 +107,6 @@ export default function Home() {
 
         <aside>
           <p>Currently at Aesop</p>
-
-          <p>Previously at <strong><a href="https://goodhuman-owes.me">GoodHuman, who owes me</a> thousands of dollars in unpaid wages and entitlements</strong></p>
         </aside>
       </main>
     </>
