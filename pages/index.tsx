@@ -104,10 +104,6 @@ export default function Home() {
             <a href="https://github.com/stef7">GitHub</a>
           </li>
         </ul>
-
-        <aside>
-          <p>Currently at Aesop</p>
-        </aside>
       </main>
     </>
   );
