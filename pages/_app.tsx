@@ -1,15 +1,15 @@
 import { Analytics } from "@vercel/analytics/next";
 import type { AppProps } from "next/app";
-import { Nunito_Sans } from "next/font/google";
+import { Lexend } from "next/font/google";
 
-const nunitoSans = Nunito_Sans({ subsets: ["latin"] });
+const bodyFont = Lexend({ subsets: ["latin"] });
 
 function App({ Component: PageComponent, pageProps }: AppProps) {
   return (
     <>
       <style jsx global>{`
         :root {
-          font-family: ${nunitoSans.style.fontFamily};
+          font-family: ${bodyFont.style.fontFamily};
           background: #e4e2e0;
           color: #2e2c2a;
           letter-spacing: 0.02em;
