@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { AppProps } from "next/app";
 import { Nunito_Sans } from "next/font/google";
 
@@ -46,6 +47,7 @@ function App({ Component: PageComponent, pageProps }: AppProps) {
           }
         }
       `}</style>
+      <Analytics />
 
       <PageComponent {...{ ...pageProps }} />
     </>
