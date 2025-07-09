@@ -1,19 +1,25 @@
-import Head from "next/head";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Stefano Perfili - Senior Software Engineer - Melbourne, Australia",
+  icons: {
+    apple: "/apple-touch-icon.png",
+    icon: [
+      { sizes: "32x32", url: "/favicon-32x32.png" },
+      { sizes: "16x16", url: "/favicon-16x16.png" },
+    ],
+    other: [{ rel: "manifest", url: "/site.webmanifest" }],
+  },
+};
+
+const css = String.raw;
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Stefano Perfili - Senior Software Engineer - Melbourne, Australia</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-      </Head>
-
-      <style jsx>{`
-        :global(:root) {
+      <style>{css`
+        :root {
           font-size: max(14px, min(24px, calc(25% + 2.5vh), calc(40% + 3vw)));
           display: flex;
           align-items: center;
@@ -22,7 +28,7 @@ export default function Home() {
           min-height: stretch;
         }
 
-        :global(body) {
+        body {
           text-align: center;
           font-size: 1rem;
           color: inherit;
@@ -75,17 +81,25 @@ export default function Home() {
           justify-content: center;
         }
 
-        aside { 
-       	  margin-top: 2.5em;
+        aside {
+          margin-top: 2.5em;
           font-size: 0.8em;
           line-height: 1.2em;
         }
-        aside a { margin: -.4em 0 } 
+        aside a {
+          margin: -0.4em 0;
+        }
       `}</style>
 
       <main id="content" role="main">
         <div className="photo">
-          <Image src="/sp.jpg" alt="Stefano Perfili" fill sizes="14rem" priority />
+          <Image
+            src="/sp.jpg"
+            alt="Stefano Perfili"
+            fill
+            sizes="14rem"
+            priority
+          />
         </div>
 
         <h1>Stefano Perfili</h1>
